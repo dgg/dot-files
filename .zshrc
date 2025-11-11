@@ -7,7 +7,7 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 # User configuration
-export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
 
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
@@ -17,3 +17,4 @@ alias ll='ls -alF --icons=auto'
 alias cat='bat --theme base16-256'
 
 alias ..='cd ..'
+
