@@ -243,6 +243,10 @@
     }
   },
   "shortcuts" : {
+    "almostMaximize" : {
+      "keyCode" : 115,
+      "modifierFlags" : 1310720
+    },
     "bottomHalf" : {
       "keyCode" : 84,
       "modifierFlags" : 1310720
@@ -256,35 +260,31 @@
       "modifierFlags" : 1310720
     },
     "center" : {
-      "keyCode" : 8,
-      "modifierFlags" : 1572864
+      "keyCode" : 119,
+      "modifierFlags" : 1310720
+    },
+    "centerHalf" : {
+      "keyCode" : 84,
+      "modifierFlags" : 393216
     },
     "centerThird" : {
-      "keyCode" : 107,
-      "modifierFlags" : 1310720
+      "keyCode" : 83,
+      "modifierFlags" : 393216
     },
-    "centerTwoThirds" : {
-      "keyCode" : 15,
-      "modifierFlags" : 786432
+    "firstFourth" : {
+      "keyCode" : 88,
+      "modifierFlags" : 393216
     },
     "firstThird" : {
-      "keyCode" : 105,
-      "modifierFlags" : 1310720
+      "keyCode" : 86,
+      "modifierFlags" : 393216
     },
     "firstTwoThirds" : {
-      "keyCode" : 106,
-      "modifierFlags" : 1310720
+      "keyCode" : 87,
+      "modifierFlags" : 393216
     },
     "larger" : {
       "keyCode" : 126,
-      "modifierFlags" : 1310720
-    },
-    "lastThird" : {
-      "keyCode" : 113,
-      "modifierFlags" : 1310720
-    },
-    "lastTwoThirds" : {
-      "keyCode" : 80,
       "modifierFlags" : 1310720
     },
     "leftHalf" : {
@@ -293,10 +293,6 @@
     },
     "maximize" : {
       "keyCode" : 87,
-      "modifierFlags" : 1310720
-    },
-    "maximizeHeight" : {
-      "keyCode" : 79,
       "modifierFlags" : 1310720
     },
     "nextDisplay" : {
@@ -309,10 +305,6 @@
     },
     "reflowTodo" : {
       "keyCode" : 45,
-      "modifierFlags" : 786432
-    },
-    "restore" : {
-      "keyCode" : 51,
       "modifierFlags" : 786432
     },
     "rightHalf" : {
@@ -337,7 +329,7 @@
     },
     "topLeftSixth" : {
       "keyCode" : 89,
-      "modifierFlags" : 1441792
+      "modifierFlags" : 393216
     },
     "topRight" : {
       "keyCode" : 92,
