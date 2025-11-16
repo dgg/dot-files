@@ -1,0 +1,109 @@
+format = """
+[](fg:subtext_1)\
+[ ](bg:subtext_1 fg:surface_2)\
+$os\
+$nodejs\
+$dotnet\
+$bun\
+[ ](bg:subtext_1 fg:surface_2)\
+[](fg:subtext_1 bg:yellow)\
+$directory\
+[](fg:yellow bg:flamingo)\
+$git_branch\
+$git_status\
+[](fg:flamingo bg:sapphire)\
+$cmd_duration\
+$status\
+[ ](fg:sapphire)\
+"""
+
+palette = 'mocha'
+
+# Disable the blank line at the start of the prompt
+# add_newline = false
+
+# An alternative to the username module which displays a symbol that
+# represents the current operating system
+
+[directory]
+style = "bg:yellow fg:surface_2"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+# Here is how you can shorten some long paths by text replacement
+# similar to mapped_locations in Oh My Posh:
+[directory.substitutions]
+"source" = "󱂀 "
+# Keep in mind that the order matters. For example:
+# "Important Documents" = " 󰈙 "
+# will not be replaced, because "Documents" was already substituted before.
+# So either put "Important Documents" before "Documents" or use the substituted version:
+# "Important 󰈙 " = " 󰈙 "
+
+[git_branch]
+symbol = ""
+style = "fg:surface_2 bg:flamingo"
+format = '[ $symbol $branch ]($style)'
+
+[git_status]
+style = "fg:surface_2 bg:flamingo"
+format = '[$all_status$ahead_behind ]($style)'
+
+[bun]
+symbol = ""
+style = "bg:subtext_1 fg:#f472b6"
+format = '[$symbol ]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:subtext_1 fg:#417e38"
+format = '[$symbol ]($style)'
+
+[dotnet]
+symbol = ""
+style = "bg:subtext_1 fg:#512bd4"
+format = '[$symbol ]($style)'
+
+[status]
+success_style = "bg:sapphire fg:#40a02b"
+failure_style = "bg:sapphire fg:#e64553"
+symbol = ' '
+success_symbol = ' '
+format = '[ $symbol]($style)'
+map_symbol = true
+disabled = false
+
+[cmd_duration]
+min_time = 5
+show_milliseconds = true
+style = "bg:sapphire fg:surface_2"
+format = '[ $duration]($style)'
+
+[palettes.mocha]
+rosewater = "#f5e0dc"
+flamingo = "#f2cdcd"
+pink = "#f5c2e7"
+mauve = "#cba6f7"
+red = "#f38ba8"
+maroon = "#eba0ac"
+peach = "#fab387"
+yellow = "#f9e2af"
+green = "#a6e3a1"
+teal = "#94e2d5"
+sky = "#89dceb"
+sapphire = "#74c7ec"
+blue = "#89b4fa"
+lavender = "#b4befe"
+text = "#cdd6f4"
+subtext_1 = "#bac2de"
+subtext_0 = "#a6adc8"
+overlay_2 = "#9399b2"
+overlay_1 = "#7f849c"
+overlay_0 = "#6c7086"
+surface_2 = "#585b70"
+surface_1 = "#45475a"
+surface_0 = "#313244"
+base = "#1e1e2e"
+mantle = "#181825"
+crust = "#11111b"
