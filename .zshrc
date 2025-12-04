@@ -26,6 +26,8 @@ alias ll='ls -alF --icons=auto'
 
 alias ..='cd ..'
 
+alias gemini='bunx gemini'
+
 #export BAT_THEME=base16-256
 export BAT_THEME=Nord
 # colorize man pages with bat
