@@ -19,6 +19,11 @@ export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
+_printandexec() {
+  { printf Executing; printf ' %q' "$@"; echo; } >&2
+  "$@"
+}
+
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 alias ls='eza'
@@ -26,7 +31,9 @@ alias ll='ls -alF --icons=auto'
 
 alias ..='cd ..'
 
-alias gemini='bunx gemini'
+alias gemini='_printandexec bun x --bun gemini'
+alias opencode='_printandexec bun x --bun opencode'
+alias claude='_printandexec bun x --bun claude'
 
 #export BAT_THEME=base16-256
 export BAT_THEME=Nord
